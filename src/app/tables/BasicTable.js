@@ -6,7 +6,7 @@ export class BasicTable extends Component {
     return (
       <div>
         <div className="page-header">
-          <h3 className="page-title"> Basic Tables </h3>
+          <h3 className="page-title"> Bilan Détaillé </h3>
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb">
               <li className="breadcrumb-item"><a href="!#" onClick={event => event.preventDefault()}>Tables</a></li>
@@ -18,49 +18,49 @@ export class BasicTable extends Component {
           <div className="col-lg-6 grid-margin stretch-card">
             <div className="card">
               <div className="card-body">
-                <h4 className="card-title">Basic Table</h4>
-                <p className="card-description"> Add className <code>.table</code>
-                </p>
+                <h4 className="card-title">Bilan des Sites</h4>
+                {/*<p className="card-description"> Add className <code>.table</code>
+                </p>*/}
                 <div className="table-responsive">
                   <table className="table">
                     <thead>
                       <tr>
-                        <th>Profile</th>
-                        <th>VatNo.</th>
-                        <th>Created</th>
-                        <th>Status</th>
+                        <th>Magasin</th>
+                        <th>Livré</th>
+                        <th>Annullées </th>
+                        {/* <th>Status</th> */}
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Jacob</td>
-                        <td>53275531</td>
-                        <td>12 May 2017</td>
-                        <td><label className="badge badge-danger">Pending</label></td>
+                        <td>Panoramique</td>
+                        <td>531</td>
+                        <td>20</td>
+                        {/*<td><label className="badge badge-danger">Pending</label></td>*/}
                       </tr>
                       <tr>
-                        <td>Messsy</td>
-                        <td>53275532</td>
-                        <td>15 May 2017</td>
-                        <td><label className="badge badge-warning">In progress</label></td>
+                        <td>Rabat</td>
+                        <td> 32 </td>
+                        <td>7</td>
+                        {/*<td><label className="badge badge-warning">In progress</label></td>*/}
                       </tr>
                       <tr>
-                        <td>John</td>
-                        <td>53275533</td>
-                        <td>14 May 2017</td>
-                        <td><label className="badge badge-info">Fixed</label></td>
+                        <td>Agadir</td>
+                        <td>733</td>
+                        <td>17</td>
+                       {/*  <td><label className="badge badge-info">Fixed</label></td> */}
                       </tr>
                       <tr>
-                        <td>Peter</td>
-                        <td>53275534</td>
-                        <td>16 May 2017</td>
-                        <td><label className="badge badge-success">Completed</label></td>
+                        <td>Kenitra</td>
+                        <td>54</td>
+                        <td>17</td>
+                       {/* <td><label className="badge badge-success">Completed</label></td>*/} 
                       </tr>
                       <tr>
-                        <td>Dave</td>
-                        <td>53275535</td>
-                        <td>20 May 2017</td>
-                        <td><label className="badge badge-warning">In progress</label></td>
+                        <td>Marrakech</td>
+                        <td>55</td>
+                        <td>20</td>
+                        {/*<td><label className="badge badge-warning">In progress</label></td>*/}
                       </tr>
                     </tbody>
                   </table>
@@ -71,49 +71,49 @@ export class BasicTable extends Component {
           <div className="col-lg-6 grid-margin stretch-card">
             <div className="card">
               <div className="card-body">
-                <h4 className="card-title">Hoverable Table</h4>
-                <p className="card-description"> Add className <code>.table-hover</code>
-                </p>
+                <h4 className="card-title">Top Ventes </h4>
+               {/* <p className="card-description"> Add className <code>.table-hover</code> 
+                </p>*/}
                 <div className="table-responsive">
                   <table className="table table-hover">
                     <thead>
                       <tr>
-                        <th>User</th>
-                        <th>Product</th>
-                        <th>Sale</th>
-                        <th>Status</th>
+                        <th>EAN</th>
+                        <th>Produit</th>
+                        <th>Ventes</th>
+                      {/*   <th>Status</th> */}
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Jacob</td>
-                        <td>Photoshop</td>
+                        <td>2342344</td>
+                        <td>TELEVISEUR</td>
                         <td className="text-danger"> 28.76% <i className="mdi mdi-arrow-down"></i></td>
-                        <td><label className="badge badge-danger">Pending</label></td>
+                        {/*<td><label className="badge badge-danger">Pending</label></td>*/}
                       </tr>
                       <tr>
-                        <td>Messsy</td>
-                        <td>Flash</td>
+                        <td>896478563487563489</td>
+                        <td>Matelas</td>
                         <td className="text-danger"> 21.06% <i className="mdi mdi-arrow-down"></i></td>
-                        <td><label className="badge badge-warning">In progress</label></td>
+                       {/* <td><label className="badge badge-warning">In progress</label></td> */} 
                       </tr>
                       <tr>
-                        <td>John</td>
-                        <td>Premier</td>
+                        <td>6847647346</td>
+                        <td> PC </td>
                         <td className="text-danger"> 35.00% <i className="mdi mdi-arrow-down"></i></td>
-                        <td><label className="badge badge-info">Fixed</label></td>
+                        {/* <td><label className="badge badge-info">Fixed</label></td>*/}
                       </tr>
                       <tr>
-                        <td>Peter</td>
-                        <td>After effects</td>
+                        <td>78456347865</td>
+                        <td>Tables</td>
                         <td className="text-success"> 82.00% <i className="mdi mdi-arrow-up"></i></td>
-                        <td><label className="badge badge-success">Completed</label></td>
+                       {/* <td><label className="badge badge-success">Completed</label></td>*/}
                       </tr>
                       <tr>
-                        <td>Dave</td>
-                        <td>53275535</td>
+                        <td>6453743856784</td>
+                        <td>Cadeaux</td>
                         <td className="text-success"> 98.05% <i className="mdi mdi-arrow-up"></i></td>
-                        <td><label className="badge badge-warning">In progress</label></td>
+                        {/* <td><label className="badge badge-warning">In progress</label></td>*/}
                       </tr>
                     </tbody>
                   </table>

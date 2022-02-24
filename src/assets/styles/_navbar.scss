@@ -21,7 +21,7 @@
     width: $sidebar-width-lg;
     height: $navbar-height;
     @media (max-width: 991px) {
-      width: 55px;
+      width: 550px;
     }
     .navbar-brand {
       color: lighten(color(gray-dark), 20%);

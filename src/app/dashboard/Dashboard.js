@@ -592,18 +592,14 @@ export class Dashboard extends Component {
           <div className="col-12">
             <span className="d-flex align-items-center purchase-popup">
               <p>Get tons of UI components, Plugins, multiple layouts, 20+ sample pages, and more!</p>
-          
               <a href="https://www.bootstrapdash.com/product/connect-plus-react/?utm_source=organic&utm_medium=banner&utm_campaign=free-preview" rel="noopener noreferrer" target="_blank" className="btn purchase-button ml-auto">Check Pro Version</a>
               <i className="mdi mdi-close bannerClose" onClick={this.toggleProBanner}></i> 
-               
-              
-
             </span>
           </div>
         </div>*/}
         <div>
           <div className="d-sm-flex justify-content-between align-items-start">
-            <h2 className="text-dark font-weight-bold mb-2"> Overview dashboard </h2>
+            <h2 className="text-dark font-weight-bold mb-2"> Tableau de Bord Aswak Direction </h2>
             <div className="d-sm-flex justify-content-xl-between align-items-center mb-2">
               <div className="btn-group d-none d-xl-flex bg-white p-3" role="group" aria-label="Basic example">
                 <button type="button" className="btn btn-link text-light py-0 font-weight-medium border-right">7 Jours</button>
@@ -630,7 +626,6 @@ export class Dashboard extends Component {
             <div className="col-md-12">
               <div className="justify-content-between align-items-center tab-transparent">
                 <Tabs defaultActiveKey="Business" className="nav">
-
                  {/*  <Tab eventKey="Users" title="Users" className="test-tab" disabled>  
                     <p>1</p>
                     </Tab>*/}
@@ -662,7 +657,6 @@ export class Dashboard extends Component {
                                       <p className="mt-4 mb-0"></p>
                                 <h3 className="mb-0 font-weight-bold mt-2 text-dark">5443</h3>
                                 */}
-          
                               </div>
                             </div>
                           </div>
@@ -687,10 +681,10 @@ export class Dashboard extends Component {
                                     </div>
                                   </CircularProgressbarWithChildren>
                                   </div>
-{/*
- <p className="mt-4 mb-0"></p>
-                                <h3 className="mb-0 font-weight-bold mt-2 text-dark">75</h3>
- */}
+                                    {/*
+                                        <p className="mt-4 mb-0"></p>
+                                        <h3 className="mb-0 font-weight-bold mt-2 text-dark">75</h3>
+                                    */}
                               </div>
                             </div>
                           </div>
@@ -722,12 +716,10 @@ export class Dashboard extends Component {
                               </div>
                             </div>
                           </div>
-                       
                           <div className="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
-           
                             <div className="card">
                               <div className="card-body text-center">
-                                <h5 className="mb-2 text-dark font-weight-normal">Followers</h5>
+                                <h5 className="mb-2 text-dark font-weight-normal">Chiffre D'affaire</h5>
                                 <h2 className="mb-4 text-dark font-weight-bold">4250k</h2>
                                   <div className="px-4 d-flex align-items-center">
                                     <svg width="0" height="0">
@@ -745,14 +737,127 @@ export class Dashboard extends Component {
                                       </div>
                                     </CircularProgressbarWithChildren>
                                   </div>  
-                                <p className="mt-4 mb-0">Decreased since yesterday</p>
+                                  {/* 
+                                   <p className="mt-4 mb-0">Decreased since yesterday</p>
                                 <h3 className="mb-0 font-weight-bold mt-2 text-dark">25%</h3>
+
+                                  */}
                               </div>
                             </div>
-                      
-                          </div>
-                       
+                          </div>  
                         </div>
+                        </div>
+                                    {/* This the tables board */}
+                                    <div className="row">
+          <div className="col-lg-6 grid-margin stretch-card">
+            <div className="card">
+              <div className="card-body">
+                <h4 className="card-title">Bilan des Sites</h4>
+                {/*<p className="card-description"> Add className <code>.table</code>
+                </p>*/}
+                <div className="table-responsive">
+                  <table className="table">
+                    <thead>
+                      <tr>
+                        <th>Magasin</th>
+                        <th>Livré</th>
+                        <th>Annullées </th>
+                        {/* <th>Status</th> */}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Panoramique</td>
+                        <td>531</td>
+                        <td>20</td>
+                        {/*<td><label className="badge badge-danger">Pending</label></td>*/}
+                      </tr>
+                      <tr>
+                        <td>Rabat</td>
+                        <td> 32 </td>
+                        <td>7</td>
+                        {/*<td><label className="badge badge-warning">In progress</label></td>*/}
+                      </tr>
+                      <tr>
+                        <td>Agadir</td>
+                        <td>733</td>
+                        <td>17</td>
+                       {/*  <td><label className="badge badge-info">Fixed</label></td> */}
+                      </tr>
+                      <tr>
+                        <td>Kenitra</td>
+                        <td>54</td>
+                        <td>17</td>
+                       {/* <td><label className="badge badge-success">Completed</label></td>*/} 
+                      </tr>
+                      <tr>
+                        <td>Marrakech</td>
+                        <td>55</td>
+                        <td>20</td>
+                        {/*<td><label className="badge badge-warning">In progress</label></td>*/}
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6 grid-margin stretch-card">
+            <div className="card">
+              <div className="card-body">
+                <h4 className="card-title">Top Ventes </h4>
+               {/* <p className="card-description"> Add className <code>.table-hover</code> 
+                </p>*/}
+                <div className="table-responsive">
+                  <table className="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>EAN</th>
+                        <th>Produit</th>
+                        <th>Ventes</th>
+                      {/*   <th>Status</th> */}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2342344</td>
+                        <td>TELEVISEUR</td>
+                        <td className="text-danger"> 28.76% <i className="mdi mdi-arrow-down"></i></td>
+                        {/*<td><label className="badge badge-danger">Pending</label></td>*/}
+                      </tr>
+                      <tr>
+                        <td>896478563487563489</td>
+                        <td>Matelas</td>
+                        <td className="text-danger"> 21.06% <i className="mdi mdi-arrow-down"></i></td>
+                       {/* <td><label className="badge badge-warning">In progress</label></td> */} 
+                      </tr>
+                      <tr>
+                        <td>6847647346</td>
+                        <td> PC </td>
+                        <td className="text-danger"> 35.00% <i className="mdi mdi-arrow-down"></i></td>
+                        {/* <td><label className="badge badge-info">Fixed</label></td>*/}
+                      </tr>
+                      <tr>
+                        <td>78456347865</td>
+                        <td>Tables</td>
+                        <td className="text-success"> 82.00% <i className="mdi mdi-arrow-up"></i></td>
+                       {/* <td><label className="badge badge-success">Completed</label></td>*/}
+                      </tr>
+                      <tr>
+                        <td>6453743856784</td>
+                        <td>Cadeaux</td>
+                        <td className="text-success"> 98.05% <i className="mdi mdi-arrow-up"></i></td>
+                        {/* <td><label className="badge badge-warning">In progress</label></td>*/}
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+                                    {/* This is the end of the table */}
+
+
                         <div className="row">
                           <div className="col-12 grid-margin">
                             <div className="card">
@@ -794,8 +899,6 @@ export class Dashboard extends Component {
                                       <Line data={this.totalExpencesData} options={this.totalExpencesOptions} />
                                     </div>
                                     */}
-
-
                                   </div>
                                   <div className="col-lg-9 col-sm-8 grid-margin  grid-margin-lg-0">
                                     <div className="pl-0 pl-lg-4 ">
@@ -998,13 +1101,12 @@ export class Dashboard extends Component {
                     </Tab>  
                     <Tab eventKey="Conversion" title="Conversion" disabled>
                     <p>4</p>
-                    </Tab>*/}
-                    
+                    </Tab>*/}     
                   </Tabs>
               </div>
             </div>
           </div>
-        </div>
+        </div>   
       </div> 
     );
   }
