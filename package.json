@@ -1,7 +1,7 @@
 {
   "name": "connect-plus-react",
   "version": "1.1.0",
-  "homepage": "https://demo_1/",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@mdi/font": "^4.2.95",
